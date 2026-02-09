@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black Jack</title>
+
+    <!-- Archivo CSS del proyecto -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Librería SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+
+  <body>
+    <!-- Título con imagen redonda -->
+    <h1>
+      <img
+        class="circular"
+        src="/logica/img/blackjack.jpg"
+        alt="imagen titulo"
+        width="300"
+      />
+    </h1>
+
+    <p class="bienvenida">Bienvenido a nuestro casino 🪄</p>
+
+    <!-- Imagen de cabecera -->
+    <img src="/logica/img/cabecera.png" alt="cabecera" />
+
+    <!-- Puntos banca-->
+    <h2>BANCA: <span id="puntos-banca">0</span></h2>
+    <div id="cartas-banca"></div>
+
+    <!-- Puntos jugador -->
+    <h2>
+      <span id="nombreJugador"></span>: <span id="puntos-jugador">0</span>
+    </h2>
+    <div id="cartas-jugador"></div>
+
+    <!-- Botones del juego -->
+    <button id="botonPedir" onclick="juegoJugador()">Pedir Carta</button>
+    <button id="botonPlantarse" onclick="finPartida()">Plantarse</button>
+
+    <br /><br />
+
+    <footer class="abajo">
+      <!-- Imagen decorativa -->
+      <img src="/logica/img/ficha-de-casino.png" alt="ficha" class="ficha" />
+    </footer>
+
+    <!-- Archivo con la lógica del juego -->
+    <script src="archivo.js"></script>
+  </body>
+</html>

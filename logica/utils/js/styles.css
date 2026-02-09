@@ -1,0 +1,52 @@
+body {
+  background-color: rgb(157, 147, 147); /* Fondo gris claro */
+  color: white; /* Color del texto */
+  text-align: center; /* Centra todo el texto */
+  font-family: Verdana, Geneva; /* Fuente */
+}
+
+.circular {
+  width: 150px; /* Tamaño de la imagen */
+  height: 150px;
+  border-radius: 50%; /* La hace circular */
+  object-fit: cover; /* Ajusta la imagen sin deformar */
+}
+
+.img-casino {
+  width: 100px;
+  height: 60px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center; /* Centra el título */
+  width: 100%; /* Fuerza el ancho completo */
+}
+
+.mensaje-bienvenida {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+
+.carta {
+  width: 90px; /* Tamaño de cada carta */
+  margin: 10px; /* Separación */
+}
+
+button {
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 10px; /* Bordes redondeados */
+  border: none;
+}
+
+#botonPedir {
+  background-color: rgb(159, 246, 71); /* Verde */
+}
+
+#botonPlantarse {
+  background-color: rgb(249, 56, 121); /* Rosa */
+}
