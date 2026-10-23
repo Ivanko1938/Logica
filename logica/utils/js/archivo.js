@@ -32,10 +32,16 @@ function crearMazo() {
   mazo = [];
   for (let palo of tipos) {
     for (let valor = 1; valor <= 13; valor++) {
+      // Los archivos de las figuras se llaman JC.png, QC.png, KC.png (no 11C, 12C, 13C)
+      let nombreArchivo = valor;
+      if (valor === 11) nombreArchivo = "J";
+      if (valor === 12) nombreArchivo = "Q";
+      if (valor === 13) nombreArchivo = "K";
+
       mazo.push({
         value: valor,
         palo: palo,
-        Img: `../..img/cartas/${valor}${palo}.png`, // Ruta correcta
+        Img: `../../img/cartas/${nombreArchivo}${palo}.png`,
       });
     }
   }
